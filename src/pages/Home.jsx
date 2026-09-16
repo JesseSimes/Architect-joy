@@ -1,5 +1,4 @@
 import Hero from '../components/Hero';
-import ImageMarquee from '../components/ImageMarquee';
 import SectionHeading from '../components/SectionHeading';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
@@ -8,10 +7,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ImageMarquee />
 
       <section className="section about" id="about">
-        <SectionHeading eyebrow="01 / About" title="Architecture built around people, place and permanence." />
+        <SectionHeading eyebrow="01 / About" title="Quiet work, carefully placed." />
         <div className="about-grid">
           <div className="experience-block reveal">
             <span className="experience-number">08+</span>
@@ -25,14 +23,12 @@ export default function Home() {
       </section>
 
       <section className="section services" id="services">
-        <SectionHeading eyebrow="02 / Services" title="Design services shaped to the project, not a template." />
+        <SectionHeading eyebrow="02 / Services" title="From first sketch to finished space." />
         <div className="service-list">
           {[
-            ['01', 'Architectural Design', 'Concepts, planning, design development and built-environment thinking.'],
-            ['02', 'Interior Design', 'Material, lighting, proportion and detail for considered interior environments.'],
-            ['03', 'Residential Design', 'Homes shaped around context, lifestyle and long-term use.'],
-            ['04', 'Commercial Design', 'Workplaces, hospitality and commercial spaces balancing identity and function.'],
-            ['05', 'Renovation & Adaptive Reuse', 'Reworking existing spaces with care for character, performance and use.']
+            ['01', 'Architecture', 'Concept, planning and spatial design for homes and small commercial environments.'],
+            ['02', 'Interiors', 'Material, lighting and detail work for considered, durable rooms.'],
+            ['03', 'Renovation', 'Careful adaptation of existing buildings with respect for character and use.']
           ].map(([num, title, desc]) => (
             <article className="service-row reveal" key={num}>
               <span>{num}</span>
